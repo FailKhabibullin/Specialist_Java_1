@@ -1,6 +1,6 @@
 package org.fail.specialistjava1.lessons.lesson11;
 
-public class Shape {
+public abstract class Shape {
 	private int x, y;
 	private String name;
 
@@ -9,6 +9,8 @@ public class Shape {
 		this.y = y;
 		this.name = name;
 	}
+
+	public abstract double area();
 
 	@Override
 	public String toString() {
